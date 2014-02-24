@@ -52,5 +52,15 @@ public class MainActivityTest {
 		assertThat(textView).containsText("Hello, Peter!");
 	}
 
+    @Test
+    public void testAdd() {
+        assertTrue(2 == 1+1);
+    }
+
+    @Test
+    public void shouldShowHelloWorldAtBeginning() {
+        TextView textView = (TextView) activity.findViewById(R.id.textView);
+        assertThat(textView).containsText("Hello world!");
+    }
 
 }
