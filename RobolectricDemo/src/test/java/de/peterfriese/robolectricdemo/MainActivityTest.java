@@ -26,6 +26,11 @@ public class MainActivityTest {
 		activity = Robolectric.buildActivity(MainActivity.class).create().start().resume().get();
 	}
 
+    @Test
+    public void shouldFail() {
+        assertTrue(false);
+    }
+
 	@Test
 	public void shouldNotBeNull() {
 		assertThat(activity).isNotNull();
